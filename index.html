@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Enthusiast Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <div class="skeleton-loader"></div>
+    <div id="content" class="hidden">
+        <header>
+            <h1 data-aos="fade-down">Web3 Enthusiast & Degen Hunter</h1>
+        </header>
+        <section class="intro" data-aos="fade-up">
+            <p>Welcome to my portfolio. I am passionate about Web3 and actively involved in the degen hunting community.</p>
+        </section>
+        <section class="projects" data-aos="fade-up">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Details about Project 1</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Details about Project 2</p>
+            </div>
+            <!-- Add more project cards as needed -->
+        </section>
+        <footer data-aos="fade-up">
+            <p>&copy; 2024 Web3 Enthusiast</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(() => {
+                document.querySelector('.skeleton-loader').style.display = 'none';
+                document.getElementById('content').classList.remove('hidden');
+            }, 2000); // simulate loading delay
+        });
+    </script>
+</body>
+</html>
